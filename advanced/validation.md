@@ -865,6 +865,22 @@ This is used to make sure a value is less than a specific value
 validate.less_than('age', 18)
 ```
 
+### Matches
+
+This rule is used when you need a value to be matched against another value.
+
+For example, if you want to make sure that a `password` matches a `confirm_password`.
+
+```python
+"""
+{
+  'password': 'secret',
+  'confirm_password': 'secret'
+}
+"""
+validate.matches('password', 'confirm_password')
+```
+
 ### None
 
 Used to make sure the value is None
